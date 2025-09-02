@@ -41,6 +41,7 @@ useEffect(() => {
         setInput('');
         setResult('');
     } else if (btn === '=') {
+      setInput(result);
     } else if (btn === '+/-') {
         if (input.startsWith('-')) setInput(input.substring(1));
         else setInput('-' + input);
